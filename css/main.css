@@ -109,10 +109,10 @@ Media Queries
 ****************************************/
 @media (max-width: 575.98px) {
   html, body{
-    font-size: 0.75em;
+    font-size: 1em;
   }
 
   #banner {
-    
+
   }
 }
