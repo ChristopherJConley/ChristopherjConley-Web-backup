@@ -1,0 +1,285 @@
+/************************************************
+General
+*************************************************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-size: 16px;
+	font-family: 'Alegreya', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+/************************************************
+ids
+*************************************************/
+#topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#topnav a {
+  display: block;
+  float: left;
+  background-color: #e6f7ff;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#topnav a:hover {
+    background-color: #ccefff;
+    color: black;
+}
+
+#topnav .icon {
+  display: none;
+}
+
+#sorter {
+  overflow: hidden;
+  margin: 0 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sorter ul ,li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  color: #000000;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#sorter a {
+  text-decoration: none;
+}
+
+#sorter a:hover {
+  background-color: #ccefff;
+  color: black;
+}
+
+#title{
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+#slideshow{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+  width: 80%;
+  margin-top:16px!important;
+  margin-bottom:16px!important;
+}
+
+#gallery  {
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+  width: 100%;
+  height: auto;
+  margin-top:16px!important;
+  margin-bottom:16px!important;
+}
+
+#contact {
+  width: 90%;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/************************************************
+classes
+*************************************************/
+.active {
+  background-color: #ccefff !important;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row, .row > .column {
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 24.999999%;
+  display: none;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.show {
+  display: flex;
+}
+
+.button {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.button.active_btn {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.mySlides {
+  display:none;
+  width: 100%;
+  height:auto;
+  border: solid lightgray 3px;
+}
+
+.trips {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+}
+
+.trip {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.trip img {
+  width: 32.9999999%
+}
+
+.inputs {
+  padding: 15px 25px;
+  width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputs:focus {
+  border: solid 1px #000000;
+}
+/************************************************
+media queries
+*************************************************/
+
+
+/* Tablets */
+@media screen and (max-width: 1000px) {
+  .trip img {
+    width: 48.999999%;
+  }
+
+  .column {
+    width: 48.999999%;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+}
+
+
+/* phones */
+@media screen and (max-width: 700px) {
+  .trip img {
+    display: none;
+  }
+
+  .column {
+    width: 48.999999%;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+
+  #topnav {
+    background-color: #e6f7ff;
+  }
+
+  #topnav a{
+    border: none;
+    display: none;
+  }
+
+  #topnav a:not(:first-child) {
+    display: none;
+  }
+
+  #topnav a.icon{
+    float: left;
+    display: block;
+  }
+
+  #topnav.responsive {
+    position: relative;
+  }
+
+  #topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

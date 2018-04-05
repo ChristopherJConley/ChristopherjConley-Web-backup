@@ -1,0 +1,35 @@
+/*
+General
+****************************************/
+body, html{
+  height: 100%;
+  margin: 0;
+  color: black;
+  font-size: 18px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#main_container {
+  width: 90%;
+}
+/*
+header section
+****************************************/
+.jumbotron{
+  border-radius: 15px 15px 0px 0px;
+	margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.navbar{
+  font-size: 18px;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 15px 15px 5px #888888;
+}
+
+#center {
+  height: 100%;
+  width: 100%;
+  margin: 2em;
+  background-color: lightgray;
+}

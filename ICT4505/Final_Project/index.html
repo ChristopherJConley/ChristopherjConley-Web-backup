@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CV Photography gallery">
+  <meta name="keywords" content="mountains, abandoned, oceans">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+    <title>CV Photorgraphy: Home</title>
+</head>
+<body>
+<nav id="topnav" class="topnav">
+  <a class="active" href="index.html" onclick="responsive_menu()">Home</a>
+  <a href="gallery.html" onclick="responsive_menu()">Gallery</a>
+  <a href="previous_trip.html" onclick="responsive_menu()">Previous Trips</a>
+  <a href="future_trip.html" onclick="responsive_menu()">Future Trips</a>
+  <a href="contact.html" onclick="responsive_menu()">Contact Me</a>
+  <a href="javascript:void(0);" onclick="responsive_menu()" class='icon'>&#9776;</a>
+</nav>
+  <header>
+		<h1 id="title">CV Photography</h1>
+	</header>
+
+  <section id="slideshow">
+    <img class="mySlides" src="images/mountains/mountains13.jpg">
+    <img class="mySlides" src="images/mountains/mountains9.jpg">
+    <img class="mySlides" src="images/mountains/mountains10.jpg">
+    <img class="mySlides" src="images/mountains/mountains11.jpg">
+    <img class="mySlides" src="images/mountains/mountains12.jpg">
+    <img class="mySlides" src="images/mountains/mountains14.jpg">
+    <img class="mySlides" src="images/mountains/mountains1.jpg">
+    <img class="mySlides" src="images/mountains/mountains2.jpg">
+    <img class="mySlides" src="images/mountains/mountains3.jpg">
+    <img class="mySlides" src="images/mountains/mountains4.jpg">
+    <img class="mySlides" src="images/mountains/mountains5.jpg">
+    <img class="mySlides" src="images/mountains/mountains6.jpg">
+    <img class="mySlides" src="images/mountains/mountains7.jpg">
+    <img class="mySlides" src="images/mountains/mountains8.jpg">
+  </section>
+
+  <footer>
+    <small><i>
+        <p>CV Photography 2018</p>
+        <p>Designed and developed by Christopher J Conley 2018</p>
+    </i></small>
+  </footer>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+  </script>
+  <script>
+  //-----------responsive menu function---------------
+  function responsive_menu() {
+    var x = document.getElementById('topnav');
+    if (x.className === "topnav") {
+      x.className += ' responsive';
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>

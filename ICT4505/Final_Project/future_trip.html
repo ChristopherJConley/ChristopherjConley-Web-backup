@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CV Photography gallery">
+  <meta name="keywords" content="mountains, abandoned, oceans">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+    <title>CV Photorgraphy: Home</title>
+</head>
+<body>
+  <nav id="topnav" class="topnav">
+    <a href="index.html" onclick="responsive_menu()">Home</a>
+    <a href="gallery.html" onclick="responsive_menu()">Gallery</a>
+    <a href="previous_trip.html" onclick="responsive_menu()">Previous Trips</a>
+    <a class="active" href="future_trip.html" onclick="responsive_menu()">Future Trips</a>
+    <a href="contact.html" onclick="responsive_menu()">Contact Me</a>
+    <a href="javascript:void(0);" onclick="responsive_menu()" class='icon'>&#9776;</a>
+  </nav>
+  <header>
+		<h1 id="title">Future Trips</h1>
+	</header>
+
+  <section class="trips">
+    <article class="trip">
+      <h1>Japan 2018</h1>
+      <h5>TBD</h5>
+      <p>This coming year the big trip is going to be Japan. Plans are to go in Autumn period. 3 weeks are planned
+      so this will alot for plenty of time to explore shrines, historical monuments, as well as modern cities like Akibara and Tokyo.
+    Expect pictures coming shortly after the trip. There should be small trips throughout the year coming!</p>
+    </article>
+
+  </section>
+  <script>
+  //-----------responsive menu function---------------
+  function responsive_menu() {
+    var x = document.getElementById('topnav');
+    if (x.className === "topnav") {
+      x.className += ' responsive';
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <footer>
+    <small><i>
+        <p>CV Photography 2018</p>
+        <p>Designed and developed by Christopher J Conley 2018</p>
+    </i></small>
+  </footer>
+
+</body>
+</html>

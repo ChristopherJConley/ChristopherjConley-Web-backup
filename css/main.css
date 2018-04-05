@@ -1,0 +1,118 @@
+/*
+color scheme
+#fff
+#eff0f2
+#c9faff
+*/
+
+/*
+General
+****************************************/
+body, html{
+  font-size: 1.05em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*
+navbar
+****************************************/
+
+/*
+header section
+****************************************/
+.jumbotron {
+  background-color: #eff0f2;
+}
+
+
+/*
+experience section
+****************************************/
+#experience {
+  margin: 0 0.3em 3em 0.3em;
+}
+
+.progress-bar {
+  background-color: #c9faff;
+  color: #000000;
+}
+
+.progress {
+  height: 3em;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-link:focus {
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.card-header {
+  background-color: #eff0f2;
+}
+/*
+work section
+****************************************/
+#work {
+  margin: 0 0.3em 3em 0.3em;
+  background-color: #eff0f2;
+  padding: 1em 1em 1.2em 1em;
+}
+
+#work .btn {
+  background-color: transparent;
+}
+
+#work .btn-secondary {
+  background-color: #545b62;
+}
+
+.modal-content {
+  background-color: #eff0f2;
+}
+
+.modal_icons {
+  width: 80%;
+}
+/*
+Custom Icons for work section
+****************************************/
+.custom_icons {
+  width: 100%;
+}
+/*
+about section
+****************************************/
+#about {
+  padding: 1em;
+}
+/*
+contact
+****************************************/
+#contact {
+  background-color: #eff0f2;
+  padding: 1em;
+}
+/*
+Footer
+****************************************/
+
+/*
+Media Queries
+****************************************/
+@media (max-width: 575.98px) {
+  html, body{
+    font-size: 0.75em;
+  }
+
+  #banner {
+    
+  }
+}

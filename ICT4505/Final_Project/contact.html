@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CV Photography gallery">
+  <meta name="keywords" content="mountains, abandoned, oceans">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+    <title>CV Photorgraphy: Home</title>
+</head>
+<body>
+  <nav id="topnav" class="topnav">
+    <a href="index.html" onclick="responsive_menu()">Home</a>
+    <a href="gallery.html" onclick="responsive_menu()">Gallery</a>
+    <a href="previous_trip.html" onclick="responsive_menu()">Previous Trips</a>
+    <a href="future_trip.html" onclick="responsive_menu()">Future Trips</a>
+    <a class="active" href="contact.html" onclick="responsive_menu()">Contact Me</a>
+    <a href="javascript:void(0);" onclick="responsive_menu()" class='icon'>&#9776;</a>
+  </nav>
+  <header>
+		<h1 id="title">Contact Me</h1>
+	</header>
+
+  <section id="contact">
+    <h3>About Me</h3>
+    <p>Hello. My name is Charles V. I enjoy spending all of my free time adventuring and going places. Wether it is backpacking
+    in the mountains/woods or traveling through various cities, I want to go out there and capture as many moments as possible to
+  share them with others.</p>
+  <p>Address: OKC, OK 73142</p>
+
+  <form id="form"action="#">
+    Name:
+    <br>
+    <input type="text" class="inputs" name="name">
+    <br>
+    Email:
+    <br>
+    <input type="email" class="inputs" name="email">
+    <br>
+    Message:
+    <br>
+    <textarea name="message" class="inputs" rows="8" cols="80"></textarea>
+    <br>
+    <input type="submit" class="button" value="Submit">
+  </form>
+  </section>
+  <script>
+  //-----------responsive menu function---------------
+  function responsive_menu() {
+    var x = document.getElementById('topnav');
+    if (x.className === "topnav") {
+      x.className += ' responsive';
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <footer>
+    <small><i>
+        <p>CV Photography 2018</p>
+        <p>Designed and developed by Christopher J Conley 2018</p>
+    </i></small>
+  </footer>
+</body>
+</html>
