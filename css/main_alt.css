@@ -26,6 +26,18 @@ navbar
 #navbar {
   background-color: #191c21 !important;
 }
+
+.btn{
+  background-color: #191c21 !important;
+  color: #21e50b;
+  border: 1px solid #21e50b;
+}
+
+.btn:hover{
+  background-color: #191c21 !important;
+  color: #21e50b;
+  border: 1px solid #21e50b;
+}
 /*
 header section
 ****************************************/
@@ -65,13 +77,11 @@ work section
 
 #work .btn-secondary {
   background-color: #191c21 !important;
-  border: 1px solid #21e50b;
   color: #21e50b !important;
 }
 
 #work .btn-secondary:hover {
   background-color: #191c21 !important;
-  color: #21e50b !important;
   border: 1px solid #21e50b;
 }
 #work a {
